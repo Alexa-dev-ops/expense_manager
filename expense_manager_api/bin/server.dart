@@ -1,10 +1,10 @@
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart' as io;
-// Make sure this matches your pubspec.yaml name
+
 import 'package:expense_manager_api/database.dart';
 import 'package:expense_manager_api/api_router.dart';
 
-// 1. A robust CORS Middleware
+//  CORS Middleware
 Middleware corsMiddleware() {
   return (Handler innerHandler) {
     return (Request request) async {
@@ -17,7 +17,7 @@ Middleware corsMiddleware() {
         });
       }
 
-      // Let the router handle normal requests (GET, POST, etc.)
+      // Let router handle normal requests (GET, POST, etc.)
       final response = await innerHandler(request);
 
       // Append CORS headers to the router's response
@@ -39,7 +39,6 @@ void main(List<String> args) async {
   final api = ApiRouter(dbHelper);
   final router = api.router;
 
-  // Configure Pipeline (Notice we use corsMiddleware() now)
   final handler = const Pipeline()
       .addMiddleware(logRequests())
       .addMiddleware(corsMiddleware())

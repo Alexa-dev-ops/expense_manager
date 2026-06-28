@@ -8,7 +8,6 @@ class ApiRouter {
 
   ApiRouter(this.dbHelper);
 
-  // Expose the configured router
   Router get router {
     final router = Router();
 

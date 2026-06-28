@@ -14,7 +14,7 @@ void main() {
       ['run', 'bin/server.dart'],
       environment: {'PORT': port},
     );
-    // Wait for server to start and print to stdout.
+   
     await p.stdout.first;
   });
 

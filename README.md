@@ -23,7 +23,7 @@ A simple full-stack Expense Manager built for the WYZE Developer Track Assessmen
 3. Open `index.html` in any modern web browser (no web server required, but you can use Live Server if preferred).
 
 ## Assessment Requirements
-* **Time Spent:** [Be honest here, e.g., "Roughly 6 hours over the weekend"]
+* **Time Spent:** [Roughly 4 hours over the weekend]
 * **Assumptions/Skipped Items:** Built a pure Dart backend instead of using a heavy framework to keep things lightweight. Used vanilla JS to minimize frontend complexity.
 * **Extras Added:** Added a sleek, custom UI theme and basic confirmation prompts before deleting an expense.
 

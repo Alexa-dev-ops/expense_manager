@@ -29,8 +29,3 @@ A simple full-stack Expense Manager built for the WYZE Developer Track Assessmen
 
 ## Honesty Policy & AI Usage
 In accordance with the assessment guidelines, I utilized Google Gemini as an AI assistant during this project. I used it to help brainstorm the Dart routing structure with `shelf`, troubleshoot a missing SQLite C library on Linux. I fully understand all the code submitted and am prepared to explain the implementation details.
-
-
-git add README.md
-git commit -m "feat: add project documentation"
-git push -u origin main
